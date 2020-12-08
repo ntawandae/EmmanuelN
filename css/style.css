@@ -1,0 +1,117 @@
+/*
+
+body{
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+*/
+/*
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+*/
+/*
+.portfolio .p-container{
+	max-width: 1170px;
+	margin:auto;
+}
+*/
+
+/* contact */
+
+#gmap_canvas img {
+      max-width: none !important;
+      background: none !important
+    }
+
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+}
+
+/* contact from design */
+.c-container {
+	padding: 20px 50px 70px;
+}
+
+.contact {
+	position: relative;
+	overflow: hidden;
+}
+.contact .contactform {
+    position: absolute;
+    left: 5%;
+    z-index: 99;
+    background: #393939;
+    padding: 30px 40px 70px;
+    box-sizing: border-box;
+}
+.contact .contactform input.form-fields,
+.contact .contactform button.form-fields,
+.contact .contactform textarea.form-fields {
+    padding: 0 0 0 40px;
+    display: block;
+    box-sizing: border-box;
+    width: 350px;
+    font-size: 16px;
+    background: #323232;
+    margin: 7px 0;
+    border: 1px solid orange;
+    color: #fdad5c;
+    opacity: 0.5;
+    min-height: 45px;
+    text-shadow: none;
+    position: relative;
+}
+.contact .contactform textarea.form-fields {
+	padding: 8px 40px;
+	resize: none;
+}
+.contact .contactform button.form-fields.button {
+	color: orange;
+	font-size: 14px;
+	padding: 0;
+	text-transform: uppercase;
+
+}
+.contact .contactform button.form-fields.button:hover {
+	background: orange;
+	color: #fff;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.contact .contactform button.form-fields.button i {
+	margin-left:10px;
+}
+
+.contact .contactform h5 {
+	color: orange;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.contact .contactform label .cntfrmicn {
+	color: orange;
+    padding: 14px;
+    position: absolute;
+    z-index: 99;
+}
+
+@media only screen and (max-width: 660px) {
+	.c-container {
+		padding: 10px 20px 30px;
+	}
+	.contmap {
+		height: 475px !important;
+	}
+	.contact .contactform { padding: 10px; right: 0; width: 100%; }
+	.contact .contactform input.form-fields, .contact .contactform button.form-fields, .contact .contactform textarea.form-fields {
+		width: 100%;
+	}
+}
