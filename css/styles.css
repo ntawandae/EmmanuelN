@@ -286,7 +286,6 @@ section .title::after {
 
 .about .about-content .left {
   width: 40%;
-  /* height: 80vh; */
 }
 
 .about .about-content .left img {
@@ -350,7 +349,6 @@ section .title::after {
 
 .about .about-content .right {
   width: 55%;
-  /* height: 80vh; */
 }
 
 .about .left .title {
@@ -481,7 +479,6 @@ section .title::after {
 }
 
 .container {
-  height: 62vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
   color: white;
