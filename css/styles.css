@@ -11,9 +11,11 @@ html {
 
 /* all similar content styling codes */
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
-
+.contact{
+    padding-bottom: 0;
+}
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -22,7 +24,6 @@ section {
 
 .services, .skills, .portfolio, .contact {
   font-family: 'Poppins', sans-serif;
-  /* height: 98vh; */
 }
 
 .about .about-content,
@@ -90,7 +91,6 @@ section .title::after {
 
 /* navbar styling */
 .navbar {
-  /*    margin-left: 22px;*/
   margin-top: 10px;
   position: fixed;
   width: 100%;
@@ -112,6 +112,7 @@ section .title::after {
 }
 
 .navbar .logo a {
+font-family: 'Dancing Script', cursive;
   color: #fff;
   font-size: 35px;
   font-weight: 600;
@@ -160,7 +161,6 @@ section .title::after {
   position: fixed;
   height: 35px;
   width: 32px;
-  /*    background: orange;*/
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -168,7 +168,6 @@ section .title::after {
   color: #fff;
   z-index: 9999;
   font-size: 30px;
-  /*    border-radius: 12px;*/
   border-bottom-width: 2px;
   cursor: pointer;
   opacity: 0;
@@ -186,11 +185,9 @@ section .title::after {
   pointer-events: none;
   z-index: 9999;
   position: fixed;
-  /*  position: absolute;*/
   width: 2rem;
   height: 2rem;
   background-color: #eee;
-  /*  top: -2.5rem;*/
   bottom: 10px;
   right: 2rem;
   border-radius: 100%;
@@ -249,6 +246,8 @@ section .title::after {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
+    -webkit-text-stroke: 2px orange;
+  color: rgba(0, 0, 0, 0);
 }
 
 .home .home-content .text-3 {
@@ -257,7 +256,6 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-  color: orange;
   font-weight: 500;
 }
 
@@ -287,12 +285,15 @@ section .title::after {
 .about .about-content .left {
   width: 40%;
 }
-
+.about .about-content .left .en{
+    display: block;
+    margin: 0 auto;
+}
 .about .about-content .left img {
   height: 350px;
   width: 350px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 50%;
 }
 
 .about .about-content .right .bars {
@@ -355,8 +356,8 @@ section .title::after {
   position: relative;
   text-align: center;
   font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 30px;
+    margin-top: 29px;
+  margin-bottom: 28px;
   padding-bottom: 20px;
   font-family: "Montserrat", sans-serif;
 }
@@ -419,7 +420,9 @@ section .title::after {
   width: calc(100%-130px);
   font-weight: 400;
 }
-
+.unbold a{
+    color: orange;
+}
 .my-hobbies {
   border-left: 3px #edf1f2 solid;
   margin-right: 15px;
@@ -471,8 +474,8 @@ section .title::after {
 .about .hobby-icon .social-link {
   margin-right: 4px;
 }
-
 /*about section end*/
+
 /*services section*/
 .services .title::after {
   content: "what I can do";
@@ -554,8 +557,8 @@ section .title::after {
   padding-top: 3%;
   overflow: hidden;
 }
-
 /*skills section End*/
+
 /*Portfolio section start*/
 .portfolio .title::after {
   content: "what I completed";
@@ -629,19 +632,6 @@ img{
 }
 
 /*responsive*/
-@media(max-width: 991px){
-	.portfolio .portfolio-item{
-		width: 50%;
-	}
-}
-@media(max-width: 767px){
-    .portfolio .portfolio-item{
-		width: 100%;
-	}
-	.portfolio .portfolio-filter .filter-item{
-		margin-bottom: 10px;
-	}
-}
 
 .portfolio-item{
     position: relative;
@@ -674,8 +664,8 @@ img{
 .portfolio-link-name:hover{
     color: orange;
 }
-
 /*portfolio section End*/
+
 /*testimonial start*/
 
 .testimonials .title:after {
@@ -735,8 +725,8 @@ img{
   letter-spacing: 1px;
   color: orange;
 }
-
 /*testimonial end*/
+
 /*Contact section start*/
 .contact .title::after {
   content: "get in touch";
@@ -826,19 +816,9 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     z-index: 99;
 }
 
-@media only screen and (max-width: 660px) {
-	.c-container {
-		padding: 10px 20px 30px;
-	}
-	.contmap {
-		height: 475px !important;
-	}
-	.contact .contactform { padding: 10px; right: 0; width: 100%; }
-	.contact .contactform input.form-fields, .contact .contactform button.form-fields, .contact .contactform textarea.form-fields {
-		width: 100%;
-	}
-}
+
 /*contact section End*/
+
 /* footer section styling */
 footer {
   background: #111;
@@ -861,6 +841,9 @@ footer span a:hover {
   .home .max-width {
     margin-left: 0;
   }
+        .services .container{
+        height: 62vh;
+    }
 }
 
 @media (max-width: 1104px) {
@@ -874,6 +857,19 @@ footer span a:hover {
   .max-width {
     padding: 0 50px;
   }
+}
+@media(max-width: 991px){
+	.portfolio .portfolio-item{
+		width: 50%;
+	}
+}
+@media(max-width: 767px){
+    .portfolio .portfolio-item{
+		width: 100%;
+	}
+	.portfolio .portfolio-filter .filter-item{
+		margin-bottom: 10px;
+	}
 }
 
 @media (max-width: 947px) {
@@ -941,7 +937,6 @@ footer span a:hover {
   }
 
   .about .about-content .left {
-    /* display: flex; */
     justify-content: center;
     margin: 0 auto 60px;
   }
@@ -972,12 +967,37 @@ footer span a:hover {
     margin-bottom: 35px;
   }
 }
+@media (max-width: 900px){
 
+     .services .serv-content .card {
+    width: 70%;;
+    margin-bottom: 20px;
+  }
+  .card-container:hover .hover1,
+  .card-container:hover .hover3 {
+    top: -5%;
+    left: 138%;
+    transform: scale(.9);
+  }
+    .card-container:hover .hover2{
+          top: -5%;
+    left:-88%;
+    transform: scale(.9);
+    }
+    
+}
 @media (max-width: 740px) {
   .about .left .title::before {
     width: 100px;
   }
+.card-container:hover .hover1, .card-container:hover .hover2, .card-container:hover .hover3 {
+        display: none;
+  }
+    .card-container{
 
+        margin-right: 10px;
+          margin:0 auto;
+    }
 }
 
 @media (max-width: 690px) {
@@ -1014,7 +1034,18 @@ footer span a:hover {
     margin-bottom: 20px;
   }
 }
-
+@media only screen and (max-width: 660px) {
+	.c-container {
+		padding: 10px 20px 30px;
+	}
+	.contmap {
+		height: 475px !important;
+	}
+	.contact .contactform { padding: 10px; right: 0; width: 100%; }
+	.contact .contactform input.form-fields, .contact .contactform button.form-fields, .contact .contactform textarea.form-fields {
+		width: 100%;
+	}
+}
 @media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
@@ -1030,8 +1061,6 @@ footer span a:hover {
   }
   .portfolio .portfolio-filter span {
     padding: 0 8px;
-    /* float: left;
-    margin-bottom: 20px; */
 }
 .portfolio-filter{
   padding: 0;
@@ -1041,7 +1070,7 @@ footer span a:hover {
   	font-size: 10px;}
 
   .services .serv-content .card {
-    width: 80%;
+    width: 70%;
     margin-bottom: 20px;
   }
 
@@ -1049,13 +1078,17 @@ footer span a:hover {
   .card-container:hover .hover2,
   .card-container:hover .hover3 {
     top: -5%;
-    left: 102%;
-    transform: scale(1.1);
+    left: 138%;
+    transform: scale(.9);
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 section .title::after{
   content: "";
 }
+.card-container:hover .hover1, .card-container:hover .hover2, .card-container:hover .hover3 {
+        display: none;
+  }
+
 }
 /*.,.,.,,.,.,..,.,.,...*/
