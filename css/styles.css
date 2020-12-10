@@ -691,6 +691,7 @@ img{
 .testimonial-pics img {
   width: 100px;
   height: 100px;
+	object-fit:cover;
   border-radius: 50%;
   margin: 0 20px;
   filter: grayscale(100%);
@@ -888,12 +889,11 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #111;
+  background:goldenrod;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
   }
-
   .navbar .menu.active {
     left: 0;
   }
