@@ -79,24 +79,3 @@ $(document).ready(function(){
       $(".testimonial-text").removeClass("active");
       $("#" + $(this).attr("alt")).addClass("active");
     });
-//google api maps
-    function init_map() {
-      var myOptions = {
-        zoom: 14,
-        center: new google.maps.LatLng(19.075314480255834, 72.88153973865361),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-      marker = new google.maps.Marker({
-        map: map,
-        position: new google.maps.LatLng(36.164129567567876, 120.4973639130302)
-      });
-      infowindow = new google.maps.InfoWindow({
-        content: '<strong>My Location</strong><br>Laoshan<br>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map, marker);
-      });
-      infowindow.open(map, marker);
-    }
-    google.maps.event.addDomListener(window, 'load', init_map);
