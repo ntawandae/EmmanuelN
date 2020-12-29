@@ -17,7 +17,6 @@ section {
     text-align: center;
     width: 65%;
     margin: 0 auto;
-    padding-bottom:15px;
 }
 .portfolio .p{
     padding-top: 30px;
@@ -52,7 +51,7 @@ section .title {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding-bottom: 20px;
   font-family: "Montserrat", sans-serif;
 }
@@ -395,11 +394,11 @@ font-family: 'Dancing Script', cursive;
   margin-bottom: 15px;
 }
 
-.about .about-content .right .btn {
+.about .about-content .right .btn, .services .btn {
   display: inline-block;
   background: orange;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
@@ -519,18 +518,20 @@ font-family: 'Dancing Script', cursive;
   justify-content: center;
 }
 
-.services .serv-content .full-card i {
-  font-size: 50px;
+.card_icon i {
   color: orange;
   transition: color 0.3s ease;
 }
 
+
+/*
 .card {
   height: 90%;
   width: 80%;
   position: absolute;
   z-index: 2;
 }
+*/
 
 .card-content {
   text-align: center;
@@ -603,7 +604,6 @@ img{
 	width: 100%;
 	display: block;
 	min-height: 90vh;
-	padding: 100px 0;
 }
 .portfolio-filter{
 	padding: 0 15px;
@@ -828,7 +828,7 @@ img{
   resize: vertical;
 }
 
-.contact-center .right .form .btn{
+.contact-center .right .form .btn, .services .btn{
     font-size: 16px;
 }
 
@@ -879,7 +879,7 @@ footer span a:hover {
     margin-left: 0;
   }
         .services .container{
-        height: 62vh;
+          height: auto; 
     }
 }
 
@@ -894,6 +894,7 @@ footer span a:hover {
   .max-width {
     padding: 0 50px;
   }
+      
 }
 @media(max-width: 991px){
 	.portfolio .portfolio-item{
@@ -946,7 +947,7 @@ footer span a:hover {
   }
 
   .home {
-    background: url("../img/bg-2.jpg") no-repeat center;
+/*    background: url("../img/bg-2.jpg") no-repeat center;*/
     background-size: cover;
     background-attachment: fixed;
     justify-content: center;
@@ -1129,3 +1130,50 @@ section .title::after{
 
 }
 /*.,.,.,,.,.,..,.,.,...*/
+
+
+.cards_container {
+     display: grid;
+  place-items: center;
+}
+
+.cards_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.card {
+      width: 250px;
+      height: 310px;
+      background-color:#fff;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+        cursor: pointer;
+        box-shadow: 0 1px 10px orange;
+      }
+.card_icon {
+        width: 80px;
+        height: 80px;
+ display: grid;
+  place-items: center;
+        margin-bottom: 15px;
+}
+.card_icon i{
+    font-size: 2rem;
+}
+.card_details {
+display: grid;
+  place-items: center;
+    text-align: center;
+    color: black;
+}
