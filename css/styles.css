@@ -1011,17 +1011,6 @@ footer span a:hover {
     width: 70%;;
     margin-bottom: 20px;
   }
-  .card-container:hover .hover1,
-  .card-container:hover .hover3 {
-    top: -5%;
-    left: 138%;
-    transform: scale(.9);
-  }
-    .card-container:hover .hover2{
-          top: -5%;
-    left:-88%;
-    transform: scale(.9);
-    }
     
 }
 @media (max-width: 740px) {
@@ -1076,13 +1065,7 @@ footer span a:hover {
 	.c-container {
 		padding: 10px 20px 30px;
 	}
-	.contmap {
-		height: 475px !important;
-	}
-	.contact .contactform { padding: 10px; right: 0; width: 100%; }
-	.contact .contactform input.form-fields, .contact .contactform button.form-fields, .contact .contactform textarea.form-fields {
-		width: 100%;
-	}
+
 }
 @media (max-width: 500px) {
   .home .home-content .text-2 {
@@ -1106,19 +1089,6 @@ footer span a:hover {
   .portfolio-filter .filter-item{
 
   	font-size: 10px;}
-
-  .services .serv-content .card {
-    width: 70%;
-    margin-bottom: 20px;
-  }
-
-  .card-container:hover .hover1,
-  .card-container:hover .hover2,
-  .card-container:hover .hover3 {
-    top: -5%;
-    left: 138%;
-    transform: scale(.9);
-  }
 }
 @media (max-width: 450px) {
 section .title::after{
@@ -1155,11 +1125,11 @@ section .title::after{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
 .card:hover {
         cursor: pointer;
-        box-shadow: 0 1px 10px orange;
+        box-shadow: 0px 1px 10px orange;
       }
 .card_icon {
         width: 80px;
